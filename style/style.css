@@ -102,6 +102,12 @@ body{
     text-align: center;
     padding: 40px 0;
 }
+.heading-container *{
+    margin: 0 auto 10px auto;
+}
+.heading-container span{
+    font-size: 40px;
+}
 .heading-container .h{
     text-transform: uppercase;
     font-size: 24px;
@@ -110,7 +116,6 @@ body{
 .heading-container .p{
     color: #727272;
     max-width: 550px;
-    margin: 20px auto;
 }
 .mute{
     color: #727272;
