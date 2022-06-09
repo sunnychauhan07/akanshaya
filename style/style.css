@@ -20,19 +20,20 @@ body{
 }
 .navbar{
     background-color: #1a1a1a;
-    transition: all 1s ease-in-out;
     padding: 20px 0;
     width: 100%;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    transition: all 5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navbar .container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .brand-name{
     margin-right: 20px;
@@ -42,14 +43,8 @@ body{
 }
 .links{
     display: none;
-    flex-direction: row;
-    margin: 0 20px;
 }
-.p-links {
-    display: flex;
-    flex-direction: row;
-}
-.p-links li a{
+.links a{
     padding: 5px 10px;
     font-size: 0.9rem;
     color: rgb(173, 173, 173);
@@ -61,14 +56,26 @@ body{
     font-weight: 400;
     color: white;
 }
-a{
+.navbar a{
     text-decoration: none;
     outline: none;
 }
-li{
-    list-style: none;
+#menu:checked +.links{
+    margin-top: 15px;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+    
 }
-.toggle-btn{
+#menu:checked +.links a{
+    padding: 15px 5px;
+}
+.menu-btn{
+    width: 20px;
+    height: 20px;
+    background-image: linear-gradient(to bottom,white 20%,#1a1a1a 20%,#1a1a1a 40%,white 40%,white 60%, #1a1a1a 60%, #1a1a1a 80%,white 80%);
+    border: 0;
     display: block;
 }
 @media (max-width:1012px){
@@ -78,14 +85,18 @@ li{
     }
 }
 @media (min-width:997px){
-    .toggle-btn{
+    .menu-btn{
         display: none;
     }
     .links {
         display: flex;
-        flex-direction: row;
+        flex-direction: row; 
+    }
+    .navbar .container{
+        justify-content: space-evenly;
     }
     
+  
 }
 .home-text{
     text-align: center;
