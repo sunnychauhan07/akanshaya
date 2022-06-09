@@ -118,7 +118,7 @@ body{
 .home-text h1{
     color: white;
     font-size: 38px;
-    font-weight: 100;
+    font-weight: 500;
     line-height: 1.4;
 }
 .home-text p{
@@ -128,12 +128,16 @@ body{
 .btn{
     color: white;
     background-color: #1a1a1a;
-    border: white solid 2px;
+    border: none;
     padding: 12px 30px;
     border-radius: 40px;
     text-transform: uppercase;
     margin: 30px;
     font-weight: 500;
+}
+.center-btn{
+    background-color: #1a1a1a;
+    border: 2px solid white;
 }
 .btn:hover{
     color: black;
@@ -148,7 +152,12 @@ body{
     align-content: center;
     background-image: url("../images/cartographer.png")
 }
-
+@media (min-width: 200px) and (max-width: 990px){
+.home-text h1 {
+    font-size: 28px;
+    line-height: 1.2;
+}
+}
 .services{
     display: flex;
     flex-wrap: wrap;
