@@ -71,12 +71,9 @@ body{
 #menu:checked +.links a{
     padding: 15px 5px;
 }
-.menu-btn{
-    width: 20px;
-    height: 20px;
-    background-image: linear-gradient(to bottom,white 20%,#1a1a1a 20%,#1a1a1a 40%,white 40%,white 60%, #1a1a1a 60%, #1a1a1a 80%,white 80%);
-    border: 0;
-    display: block;
+.menu-btn span{
+    color: white;
+    font-size: 40px;
 }
 @media (max-width:1012px){
     
