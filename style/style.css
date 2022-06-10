@@ -11,12 +11,14 @@ body{
     padding: 0;
     
 }
+
 .container{
     margin-right: auto;
     margin-left: auto;
     width: 100%;
     padding-right: var(--bs-gutter-x,.75rem);
     padding-left: var(--bs-gutter-x,.75rem);
+    transition: all 3s;
 }
 .navbar{
     background-color: #1a1a1a;
@@ -26,7 +28,7 @@ body{
     top: 0;
     right: 0;
     left: 0;
-    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .navbar .container{
     display: flex;
@@ -43,6 +45,7 @@ body{
 }
 .links{
     display: none;
+    transition: all 0.5s;
 }
 .links a{
     padding: 5px 10px;
@@ -60,7 +63,7 @@ body{
     text-decoration: none;
     outline: none;
 }
-#menu:checked +.links{
+#menu:checked ~.links{
     margin-top: 15px;
     background-color: #1a1a1a;
     display: flex;
@@ -68,12 +71,17 @@ body{
     flex: 100%;
     
 }
-#menu:checked +.links a{
+#menu:checked ~ .menu-btn span{
+    transform: rotate(90deg);
+}
+#menu:checked ~ .links a{
     padding: 15px 5px;
 }
 .menu-btn span{
     color: white;
     font-size: 40px;
+    transition: all 0.5s;
+
 }
 @media (max-width:1012px){
     
@@ -142,12 +150,14 @@ body{
     cursor: pointer;
 }
 .center-btn{
-    background-color: #1a1a1a;
+    background-color: rgba(255,255,255,0);
     border: 2px solid white;
+    transition: all 2s;
 }
 .center-btn:hover{
     color: black;
     background-color: white;
+    
 }
 .center{
     display: flex;
@@ -246,8 +256,14 @@ body{
     animation-duration: 1.5s;
     
 }
+.client h1{
+    font-size:30px;font-weight:300;
+}
 .client p{
     font-size:20px; line-height:36px; color: rgb(150, 150, 150);
+}
+.client img{
+    border-radius: 50%;margin: 30px;
 }
 .team{
     display: flex;

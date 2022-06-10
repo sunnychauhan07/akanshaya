@@ -16,15 +16,15 @@
         <div class="container" >
             
                 <a class="brand-name"  href="">Akanshaya</a>
-                
+                <input style="display: none;" type="checkbox" id ="menu">
+        
                     <label  class="menu-btn" for="menu"><span class="material-symbols-outlined">
                         menu
                         </span>
                     </label>
                 
-                <input style="display: none;" type="checkbox" id ="menu">
+                
         <div class="links" id="p-links">
-            
                 <a href="">Home</a>
                 <a href="">Services</a>
                 <a href="">Features</a>
@@ -148,38 +148,38 @@
         <div class="container">
             <div class="clients-container">
                 <div class="client">
-                    <h1 style="font-size:30px;font-weight:300;">66</h1>
+                    <h1>66</h1>
                     <p class="mute"><i> cubilia etiam parturient augue nostra sodales sit aptent venenatis magna
                             sapienante hendrerit ullamcorper tincidunt urna eget Ante feugiat.</i></p>
-                    <img style="border-radius: 50%;margin: 30px;" src="images/testi-1.jpg " width=85px alt="">
+                    <img src="images/testi-1.jpg " width=85px alt="">
                     <p>- John Litts, Globing</p>
-                    <p style="margin: 10px;">
+                    <p>
                         <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
                     </p>
                 </div>
                 <div class="client">
-                    <h1 style="font-size:30px;font-weight:300;">66</h1>
+                    <h1>66</h1>
                     <p class="mute"><i> Our task must be to free ourselves by widening our circle of compassion to
                             embrace all living creatures and the whole of quis consectetur nunc sit amet semper
                             justo.nature and its beauty.
 
                         </i></p>
-                    <img style="border-radius: 50%;margin: 30px;" src="images/testi-2.jpg " width=85px alt="">
+                    <img src="images/testi-2.jpg " width=85px alt="">
                     <p>- Laurie Bell</p>
-                    <p style="margin: 10px;">
+                    <p>
                         <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
                     </p>
                 </div>
                 <div class="client">
-                    <h1 style="font-size:30px;font-weight:300;">66</h1>
+                    <h1>66</h1>
                     <p class="mute"><i> I've learned that people will forget what you said, people will forget what you
                             did,but people will never forget how donec in efficitur lectus, nec lobortis metus you made
                             them feel.
 
                         </i></p>
-                    <img style="border-radius: 50%;margin: 30px;" src="images/testi-3.jpg " width=85px alt="">
+                    <img src="images/testi-3.jpg " width=85px alt="">
                     <p>- Howard Kelley</p>
-                    <p style="margin: 10px;">
+                    <p>
                         <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
                     </p>
                 </div>
@@ -250,30 +250,6 @@
             </div>
         </div>
     </section>
-    <script>
-        let slideIndex = 0;
-        setInterval(showSlides(), 2000);
-        function showSlides() {
-            let slides = document.getElementsByClassName("client");
-            if (slideIndex > slides.length - 1) {
-                slideIndex = 0;
-            }
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex].style.display = "block";
-            slideIndex++;
-        }
-        function show() {
-            if (document.getElementById("p-links").style.display == "none") {
-                document.getElementById("p-links").style.display = "flex";
-                document.getElementById("p-links").style.flexBasis = "100%";
-            }
-            else {
-                document.getElementById("p-links").style.display = "none";
-            }
-        }
-    </script>
 </body>
 
 </html>
