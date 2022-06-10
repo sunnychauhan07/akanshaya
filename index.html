@@ -162,7 +162,6 @@
                     <p class="mute"><i> Our task must be to free ourselves by widening our circle of compassion to
                             embrace all living creatures and the whole of quis consectetur nunc sit amet semper
                             justo.nature and its beauty.
-
                         </i></p>
                     <img src="images/testi-2.jpg " width=85px alt="">
                     <p>- Laurie Bell</p>
@@ -183,6 +182,12 @@
                         <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
                     </p>
                 </div>
+                <span onclick="clientNav(-1)" class="material-symbols-outlined client-btn client-left-btn">
+                    arrow_back_ios
+                    </span>
+                    <span onclick="clientNav(1)" class="material-symbols-outlined client-btn client-right-btn">
+                        arrow_forward_ios
+                        </span>
             </div>
         </div>
     </section>
@@ -251,5 +256,26 @@
         </div>
     </section>
 </body>
-
+<script>
+    let clientIndex=0;
+    let clientList=document.getElementsByClassName("client");
+    let nClient=clientList.length;
+    slide();
+    function clientNav(n){
+        clientIndex+=n;
+        slide()
+    }
+    function slide(){
+        for (let i=0;i<nClient;i++){
+            clientList[i].style.display="none";
+        }
+        if (clientIndex>=nClient){
+            clientIndex=0;
+        }
+        if (clientIndex<0){
+            clientIndex=nClient-1;
+        }
+        clientList[clientIndex].style.display="block";
+    }
+</script>
 </html>
